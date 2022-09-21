@@ -3,13 +3,41 @@
 <head> 
 <meta charset="utf-8">
 <title></title>
-<link rel ="stylesheet" href="css/style.css">
-<link rel ="stylesheet" href="css/responze.css">
 </head>
 <body>
-    <button type="button">Odeslat</button>
-    <button type="button">Odeslat</button>
-    <button type="button">Odeslat</button>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+ 
+    <button id="about">About</button>
+    <button id="contact">Contact</button>
+    <button id="custom" style="font-weight:bold;">ඞඞSUSYඞඞ</button><br>
+    <div id="iframeHolder"></div>
+    
+    <script type="text/javascript">
+        $(function(){
+        $('#about').click(function(){ 
+        if(!$('#iframe').length) {
+                $('#iframeHolder').html('<iframe id="iframe1" src="about.html" width="100%" height="450"></iframe>');
+        }
+        
+    });   
+    });
+        $(function(){
+        $('#contact').click(function(){ 
+        if(!$('#iframe').length) {
+                $('#iframeHolder').html('<iframe id="iframe2" src="contact.html" width="100%" height="450"></iframe>');
+        }
+        
+    });
+    });
+          $(function(){
+        $('#custom').click(function(){ 
+        if(!$('#iframe').length) {
+                $('#iframeHolder').html('<iframe id="iframe3" src="custom.html" width="100%" height="450"></iframe>');
+        }
+        
+    });
+    });
+    </script>
     <h1>Nadpis</h1>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Integer pellentesque quam vel velit. Nullam at arcu a est sollicitudin euismod. Integer pellentesque quam vel velit. In rutrum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Nullam dapibus fermentum ipsum. Etiam commodo dui eget wisi. Aliquam erat volutpat.
     </p>
